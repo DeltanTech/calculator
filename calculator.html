@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/calculator.css">
+  <title>電卓</title>
+  <script src="./calculator.js" defer></script>
+</head>
+<body>
+  <div name="calculator">
+    <table>
+      <!---液晶画面--->
+      <tr>
+        <td colspan="4">
+          <input type="text" id="js-display" class="display" name="display" disabled>
+        </td>
+      </tr>
+
+      <!---上から１段目（7〜9+÷)--->
+      <tr>
+        <td><button value="7">7</button></td>
+        <td><button value="8">8</button></td>
+        <td><button value="9">9</button></td>
+        <td><button value="/" class="operator" name="div_btn">➗️</td>
+      </tr>
+
+      <!---上から２段目(4〜６+×)--->
+      <tr>
+        <td><button value="4">4</button></td>
+        <td><button value="5">5</button></td>
+        <td><button value="6">6</button></td>
+        <td><button value="*" class="operator" name="multi_btn">✕</button></td>
+      </tr>
+
+      <!---上から３段目(1〜3+-)--->
+      <tr>
+        <td><button value="1">1</button></td>
+        <td><button value="2">2</button></td>
+        <td><button value="3">3</button></td>
+        <td><button value="-" class="operator">－</button></td>
+      </tr>
+
+      <!---上から4段目(0/C/=/+)--->
+      <tr>
+        <td><button value="0">0</button></td>
+        <td><button value="C">C</button></td>
+        <td><button value="=" class="equal" id="js-equal">＝</button></td>
+        <td><button value="+" class="operator">＋</button></td>
+      </tr>
+    </table>
+    <button value="**">べき乗</button>
+    <button value="del">一文字消す</button>
+
+
+  </form>
+</body>
+</html>
